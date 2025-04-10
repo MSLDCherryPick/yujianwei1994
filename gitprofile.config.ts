@@ -12,7 +12,7 @@ const CONFIG = {
   base: '/yujianwei1994/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: false, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -29,26 +29,6 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-      ],
     },
   },
   seo: {
@@ -56,120 +36,106 @@ const CONFIG = {
     description: '',
     imageURL: '',
   },
-  social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    skype: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
-  },
-  resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
-  },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Speech Recognition',
+    'Speech Synthesis',
+    'Speech Enhancement',
+    'Muti-modality',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
+      company: 'Tencent AI Lab',
+      position: 'Senior Researcher',
       from: 'September 2021',
+      to: 'June 2024',
+    },
+    {
+      company: 'Moonshot AI',
+      position: 'Muti-modality Research Engineer',
+      from: 'June 2024',
+      to: 'February 2025',
+    },
+    {
+      company: 'Microsoft',
+      position: 'Senior Researcher',
+      from: 'February 2025',
       to: 'Present',
-      companyLink: 'https://example.com',
     },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
+    
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Nanjing University',
+      degree: 'Bachelor of Science in Physics',
+      from: 'Sep 2013',
+      to: 'Jun 2017',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'The Chinese University of Hong Kong',
+      degree: 'Ph.D. in Systems Engineering and Engineering Management',
+      from: 'August 2017',
+      to: 'July 2021',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      title: 'Audio-visual recognition of overlapped speech for the lrs2 dataset',
+      conferenceName: 'ICASSP',
+      journalName: '',
+      authors: 'Jianwei Yu, Shi-Xiong Zhang, Jian Wu, Shahram Ghorbani, Bo Wu, Shiyin Kang, Shansong Liu, Xunying Liu, Helen Meng, Dong Yu',
+      link: 'https://arxiv.org/pdf/2001.01656',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
+      title: 'Autoprep: An automatic preprocessing framework for in-the-wild speech data',
+      conferenceName: 'ICASSP',
       journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      authors: 'Jianwei Yu, Hangting Chen, Yanyao Bian, Xiang Li, Yi Luo, Jinchuan Tian, Mengyang Liu, Jiayi Jiang, Shuai Wang',
+      link: 'https://arxiv.org/pdf/2309.13905',
+    },
+    {
+      title: 'Audio-visual multi-channel integration and recognition of overlapped speech',
+      conferenceName: 'IEEE/ACM Transactions on Audio, Speech, and Language Processing',
+      journalName: '',
+      authors: 'Jianwei Yu, Shi-Xiong Zhang, Bo Wu, Shansong Liu, Shoukang Hu, Mengzhe Geng, Xunying Liu, Helen Meng, Dong Yu',
+      link: 'https://arxiv.org/pdf/2011.07755',
+    },
+    {
+      title: 'Development of the CUHK Dysarthric Speech Recognition System for the UA Speech Corpus.',
+      conferenceName: 'INTERSPEECH',
+      journalName: '',
+      authors: 'Jianwei Yu*, Xurong Xie*, Shansong Liu, Shoukang Hu, Max WY Lam, Xixin Wu, Ka Ho Wong, Xunying Liu, Helen Meng',
+      link: 'https://www.cs.ou.edu/~fagg/classes/aml_2019/papers/Dysarthric_speech_recogniton_systems.pdf',
+    },
+    {
+      title: 'High fidelity speech enhancement with band-split rnn',
+      conferenceName: 'INTERSPEECH',
+      journalName: '',
+      authors: 'Jianwei Yu*, Hangting Chen*,Yi Luo, Rongzhi Gu, Chao Weng',
+      link: 'https://arxiv.org/pdf/2212.00406',
+    },
+    {
+      title: 'Secap: Speech emotion captioning with large language model',
+      conferenceName: 'AAAI',
+      journalName: '',
+      authors: 'Yaoxun Xu, Hangting Chen, Jianwei Yu, Qiaochu Huang, Zhiyong Wu, Shi-Xiong Zhang, Guangzhi Li, Yi Luo, Rongzhi Gu',
+      link: 'https://ojs.aaai.org/index.php/AAAI/article/download/29902/31577',
+    },
+    
+    {
+      title: 'Diffsound: Discrete diffusion model for text-to-sound generation',
+      conferenceName: '',
+      journalName: 'IEEE/ACM Transactions on Audio, Speech, and Language Processing',
+      authors: 'D Yang, J Yu, H Wang, W Wang, C Weng, Y Zou, D Yu',
+      link: 'https://arxiv.org/pdf/2207.09983',
+    },
+    {
+      title: 'Music source separation with band-split RNN',
+      conferenceName: 'IEEE/ACM Transactions on Audio, Speech, and Language Processing',
+      journalName: '',
+      authors: 'Yi Luo, Jianwei Yu',
+      link: 'https://arxiv.org/pdf/2209.15174',
     },
   ],
-  // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
-  // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
   themeConfig: {
     defaultTheme: 'lofi',
 
@@ -232,14 +198,6 @@ const CONFIG = {
       '--rounded-btn': '3rem',
     },
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
   enablePWA: true,
 };
 
